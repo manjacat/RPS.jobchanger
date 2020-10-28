@@ -1,0 +1,47 @@
+﻿<Controls:MetroWindow x:Class="RPS.jobchanger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPS.jobchanger"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Old Jobname : "/>
+        <TextBox x:Name="txt_old_job" Grid.Row="2" Grid.Column="2" Width="300" Margin="20,5" Text="D-CRS-C19-0820"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="1"  Text="New Jobname: "/>
+        <TextBox x:Name="txt_new_job" Grid.Row="3" Grid.Column="2" Width="300" Margin="20,5" Text="D-CRS-C19-0820-A" />
+
+        <Button x:Name="btnStart" Grid.Row="4" Grid.Column="2" Height="40" Width="400"
+                Content="Run Me" Click="BtnStart_Click"/>
+    </Grid>
+    
+    
+</Controls:MetroWindow>
