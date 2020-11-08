@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:RPS.jobchanger"
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="165" Width="500.138" MinWidth="515" MaxWidth="515" MaxHeight="165" MinHeight="165">
+    <Grid Margin="0,0,5.6,6.8">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="auto"/>
@@ -39,9 +39,9 @@
         <TextBlock Grid.Row="3" Grid.Column="1"  Text="New Jobname: "/>
         <TextBox x:Name="txt_new_job" Grid.Row="3" Grid.Column="2" Width="300" Margin="20,5" Text="D-CRS-C19-0820-A" />
 
-        <Button x:Name="btnStart" Grid.Row="4" Grid.Column="2" Height="40" Width="400"
-                Content="Run Me" Click="BtnStart_Click"/>
+        <Button x:Name="btnStart" Grid.Row="4" Grid.Column="1" Width="400"
+                Content="Run Me" Click="BtnStart_Click" Grid.ColumnSpan="2" Margin="81.2,0.8,0.4,-5.6" Grid.RowSpan="9"/>
     </Grid>
-    
-    
+
+
 </Controls:MetroWindow>
