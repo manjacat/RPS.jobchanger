@@ -38,7 +38,7 @@ namespace RPS.jobchanger
             PrintHelper.Trace(Messages.StartProgram);
             
             // Set the window theme to Dark.Red
-            ThemeManager.Current.ChangeTheme(this, "Dark.Red");
+            ThemeManager.Current.ChangeTheme(this, "Dark.Blue");
             AdditionalInitialization();
         }
         public void AdditionalInitialization()
