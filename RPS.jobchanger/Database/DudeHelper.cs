@@ -1,11 +1,8 @@
 ﻿using Oracle.ManagedDataAccess.Client;
-using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RPS.jobchanger.Utility;
 
 namespace RPS.jobchanger.Database
 {
@@ -109,6 +106,7 @@ namespace RPS.jobchanger.Database
                     string.Format("UPDATE DUDEEO.{0} SET JOB_NAME = :JOBNAME_NEW WHERE JOB_NAME = :JOBNAME_OLD ", item);
                 //Console.WriteLine(query);
                 ExecNonQuery(query, parameters);
+                PrintHelper.Error("Updated " + item + " from OLD: " + jobName_old + " to NEW: " + jobName_new);
 
                 //ENABLE BACK THE UPDATE TRIGGER
                 triggerEnable = string.Format("ALTER TRIGGER DUDEEO.U_{0} ENABLE", item);
